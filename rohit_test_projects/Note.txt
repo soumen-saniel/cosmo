@@ -1,0 +1,13 @@
+> HelloWorld
+Tags:
+basic, browser_action, background page
+
+
+> Protein Tracker
+Tags:
+chrome storage and notification api use, event page, permissions.
+
+
+> Pluralsight Tracker
+Tags:
+Doesnt work, has to be modified according to new task

@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+
+    "name":"Plural Sight Helper",
+    "description":"Addds functionality to the pluralsight website",
+    "version": "1.0",
+    
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title":"Pluralsight Helper",
+        "default_popup":"popup.html"
+    },
+
+    "background": {
+        "scripts": ["eventPage.js"],
+        "persistent": false
+    },
+
+    "content_scripts":[
+        {
+            "matches":["https://app.pluralsight.com/library/*","https://app.pluralsight.com/profile/author/*"],
+            "js":["pluralsight_cs.js","jquery-3.2.1.js"],
+            "css":["pluralsight_cs.css"]
+        }
+    ],
+
+    "permissions":[
+        "tabs",
+        "https://app.pluralsight.com/*"
+    ]
+}
+//"popup":"anyName.html"
+// Extension can be either "page_action" or "browser_action"

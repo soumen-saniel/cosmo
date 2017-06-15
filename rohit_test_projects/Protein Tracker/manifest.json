@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2, //important, 2 is the latest version of the manifest
+
+    "name": "Protein Tracker",
+    "description": "Tracks a user's protein totals throughtout the day.",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon":"icon.png",
+        "default_popup":"popup.html"
+    },
+
+    "options_page":"options.html",
+
+    "background":{
+        "scripts": ["eventPage.js"],
+        "persistent": false // true is backgorund page , false = event page
+    },
+
+    "permissions" : [
+        "storage",
+        "notifications",
+        "contextMenus"
+    ]
+}
